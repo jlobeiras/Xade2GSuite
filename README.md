@@ -21,6 +21,7 @@ En el fichero de entrada CSV proporcionado se puede ver un ejemplo de los campos
 El programa está escrito en C++ y se proporciona un Makefile para compilarlo.
 Al ejecutar el programa sin parámetros nos indicará la lista de argumentos permitidos, como mínimo será necesario especificar el listado de alumnos para los que generar las cuentas.
 El texto del PDF informativo para el alumndo puede ser personalizado en el fichero "header.tex", aunque el autogenerador de PDFs requiere tener LaTeX instalado.
+El fichero CSV de salida automatiza la creación de todas las cuentas en bloque, por lo que ahorra tiempo al administrador GSuite del centro.
 
 [ Ejemplo de tarjeta generada ]
 
