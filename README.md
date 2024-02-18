@@ -13,4 +13,4 @@ El texto del PDF informativo para el alumndo puede ser personalizado en el fiche
 
 [ Ejemplo de tarjeta generada ]
 
-<img src="img/GSuiteAccounts.png" width="500">
+<img src="img/GSuiteAccounts.png" width="600">
