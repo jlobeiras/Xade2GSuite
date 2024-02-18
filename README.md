@@ -7,7 +7,7 @@ Este programa toma el CSV generado por Xade y generará los siguientes documento
 - Fichero HTML con el listado de cuentas del grupo para el profesor.
 - Fichero PDF con el texto informativo para el alumnado y la información de login.
 - Fichero CSV listo para subir al panel de administración de GSuite y crear todas las cuentas de alumno de forma automatizada.
-- 
+
 
 En el fichero datos_ejemplo.csv se puede ver un ejemplo de los campos a obtener mediante el generador de informes de Xade:
 - Primeiro apelido
