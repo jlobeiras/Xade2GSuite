@@ -10,3 +10,7 @@ Este programa toma el CSV generado por Xade (ver campos en el fichero de ejemplo
 El programa está escrito en C++ y se proporciona un Makefile para compilarlo.
 Al ejecutar el programa sin parámetros nos indicará la lista de argumentos permitidos, como mínimo será necesario especificar el listado de alumnos para los que generar las cuentas.
 El texto del PDF informativo para el alumndo puede ser personalizado en el fichero "header.tex", aunque el autogenerador de PDFs requiere tener LaTeX instalado.
+
+[ Ejemplo de tarjeta generada ]
+
+<img src="img/GSuiteAccounts.png" width="400">
