@@ -5,7 +5,7 @@ Create GSuite for Education accounts based on Xade CSV
 
 Este programa toma el CSV generado por Xade y generará los siguientes documentos:
 - Fichero HTML con el listado de cuentas del grupo para el profesor.
-- Fichero PDF con el texto informativo para el alumnado y la información de login.
+- Fichero PDF con el texto informativo para el alumnado y los datos de acceso.
 - Fichero CSV listo para subir al panel de administración de GSuite y crear todas las cuentas de alumno de forma automatizada.
 
 
