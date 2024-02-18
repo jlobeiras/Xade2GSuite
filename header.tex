@@ -1,0 +1,72 @@
+
+% Establecemos el formato de página y los márgenes
+\documentclass[10pt,a4paper,twoside]{article}
+\usepackage[a4paper, top=.9cm, bottom=.9cm, left=1cm, right=1cm, footskip=.5cm]{geometry}
+\setlength{\parindent}{8mm}
+\setlength{\columnsep}{0mm}
+
+% Establecemos la codificación del texto y el juego de caracteres
+\usepackage[table]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{soulutf8}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{color} 
+
+% Cambia la fuente de todo el documento a Helvética por defecto ---
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand {\CUTLINE}          {\vspace{-1mm}\noindent\textcolor{gray}{\dotfill}\vspace{-1mm}}
+\newcommand {\ITEM}             {\item[--]}
+\newcommand {\I}[1]				{\emph{#1}}
+\newcommand {\B}[1]				{\textbf{#1}}
+\newcommand {\U}[1]             {\underline{#1}}
+\newcommand {\SUB}[1]           {\textsubscript{#1}}
+\newcommand {\REM}              {\iffalse}
+\newcommand {\TAB}              {\ \ \ \ }
+\newcommand {\QUOTE}[1]			{``#1''}
+\newcommand {\HTML}[1]		    {\begin{center}\U{#1}\end{center}}
+\newcommand {\TWOCOL}[2]        {\begin{multicols}{2} #1 \columnbreak #2 \end{multicols}}
+%\newcommand {\TWOCOL}[2]        {#1 #2}
+%\newcommand {\TWOCOL}[2]        {\noindent\begin{minipage}[c]{0.5\linewidth}#1\end{minipage}\begin{minipage}[c]{0.55\linewidth}#2\end{minipage}}
+
+\newcommand {\FICHA}[4]        {
+    \TWOCOL{
+    O instituto Afonso X pon a disposición do alumnado contas de “GSuite for Education”. O servizo é ofrecido por Google pero xestionado directamente polo propio centro en conformidade coa normativa vixente. O único dato empregado para a creación das contas educativas é o nome/apelidos para xerar o usuario. Ademáis ó contrario que as contas de \I{GMail} estándar as contas educativas non teñen ningún tipo de publicidade e as comunicacións tampouco son escaneadas con fins de recollida de datos. Para máis información:
+    \HTML{https://edu.google.com/intl/es-419/why-google/privacy-security}
+    
+    O contrasinal proporcionado é provisional e o sistema solicitará o seu cambio a primeira vez que se accede. Para entrar na conta pódese acceder desde a páxina normal de GMail ou ben desde a seguinte ligazón:
+    \HTML{https://mail.google.com/a/iesafonsoxcambre.com}
+    
+    \begin{flushleft}
+    \begin{tabular} {| m{17mm} | m{67mm} |} \hline
+     \B{Curso} & \detokenize{#1} \\ \hline
+     \B{Alumno} & #2 \\ \hline
+     \B{Usuario} & #3 \\
+      & \TAB @iesafonsoxcambre.com \\ \hline
+     \B{Contrasinal} & #4 \\ \hline
+    \end{tabular}
+    \end{flushleft}
+    
+    }{
+    \begin{itemize}
+    \ITEM A conta é para uso exclusivo educativo e o envío/recepción de direccións alleas ó centro está desactivado.
+    \ITEM As contas de estudantes teñen validez limitada a un ano académico, eliminándose no comezo do curso seguinte.
+    \ITEM En caso de uso inadecuado a dirección do centro resérvase o dereito de revisar a conta (nunca sen notificar ó propietario).
+    \ITEM O usuario será responsable de custodiar o acceso á súa conta e non compartir o contrasinal.
+    \ITEM Se o alumno esquece o contrasinal pode restaurar o acceso no departamento de informática presentando un documento de identificación válido. Se por razóns de forza maior non fose posible realizalo de forma presencial poñerase en contacto co titor para que de forma excepcional solicite a renovación telefónica.
+    \end{itemize}
+    
+    \begin{flushright}
+    \begin{tabular}{ | m{84mm} | } \hline
+     \multicolumn{1}{|c|}{Xustificante de entrega de conta a recoller polo profesor} \\ \hline
+     \\ \\ \multicolumn{1}{|r|}{\detokenize{#1}} \\ \hline
+     Sinatura: \I{#2} \\ \hline
+    \end{tabular}
+    \end{flushright}
+    
+    }
+    \CUTLINE
+}
